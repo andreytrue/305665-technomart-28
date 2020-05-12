@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Andrey Demyanov](https://up.htmlacademy.ru/htmlcss/28/user/305665).
-* Наставник: Дмитрий Гуляев.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima)
 
 ---
 
