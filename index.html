@@ -7,66 +7,64 @@
   <body>
 
     <header>
+    	<div>
         <a href="#">
           <img src="img/logo.svg" width="220" height="47" alt="Логотип компании Техномарт">
         </a>
         <p>Техномарт</p>
 
+        <form>
+        	<label for="search" class="visually-hidden">Поиск по сайту</label>
+        	<input type="search" name="search" id="search" placeholder="Поиск">
+        </form>
+        
+        <a href="">Закладки</a>
+        
+        <a href="">Корзина</a>
+        
+        <a href="">Оформить заказ</a>
+      </div>
+
+      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+      
+      <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+      
+      <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      
+      <a href="">Войти</a>
+      
+      <a href="">Регистрация</a>
+
+      <nav>
         <ul>
           <li>
-            <a href="">Поиск</a>
+            <a href="">Главная</a>
           </li>
           <li>
-            <a href="">Закладки</a>
+            <a href="">Компания</a>
           </li>
           <li>
-            <a href="">Корзина</a>
+            <a href="catalog.html">Каталог</a>
           </li>
           <li>
-            <a href="">Оформить заказ</a>
+            <a href="">Новости</a>
+          </li>
+          <li>
+            <a href="">Спецпредложения</a>
+          </li>
+          <li>
+            <a href="">Доставка</a>
+          </li>
+          <li>
+            <a href="">Контакты</a>
           </li>
         </ul>
-
-        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        
-        <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-        
-        <p>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        
-        <a href="">Войти</a>
-        
-        <a href="">Регистрация</a>
-
-        <nav>
-          <ul>
-            <li>
-              <a href="">Главная</a>
-            </li>
-            <li>
-              <a href="">Компания</a>
-            </li>
-            <li>
-              <a href="catalog.html">Каталог</a>
-            </li>
-            <li>
-              <a href="">Новости</a>
-            </li>
-            <li>
-              <a href="">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="">Доставка</a>
-            </li>
-            <li>
-              <a href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      </nav>
+    </header>
 
     <main>
 
-      <!--<h1>Компания Техномарт</h1>-->
+      <h1 class="visually-hidden">Компания Техномарт</h1>
       
       <div> <!--Блок с краской-->
         <p>Материалы</p>
@@ -203,17 +201,17 @@
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными!</p>
         
-      <ul>
-        <li>
-          <p>Доставка</p> <!--Пункт меню списка сервисов--> 
-          <h3>Доставка</h3> <!--Услуга доставки-->
-          <p>Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
-          поднимая его на ваш этаж!</p>
-        </li>
-        <!--Остальные пункты меню списка сервисов-->
-      </ul>
+	      <ul>
+	        <li>
+	          <p>Доставка</p> <!--Пункт меню списка сервисов--> 
+	          <h3>Доставка</h3> <!--Услуга доставки-->
+	          <p>Мы с удовольствием доставим ваш товар прямо
+	          к вашему подъезду совершенно бесплатно!
+	          Ведь мы неплохо заработаем,
+	          поднимая его на ваш этаж!</p>
+	        </li>
+	        <!--Остальные пункты меню списка сервисов-->
+	      </ul>
       </section>
 
       <section> <!--Почему Техномарт лучше других компаний?-->
@@ -237,6 +235,7 @@
         <a href="http://maps.google.com">
           <img src="img/map.png" alt="Карта с отметкой местоположения компании Техномарт">
         </a>
+        <button type="button">Заблудились? Напишите нам!</button>
       </section>
 
     </main>
@@ -246,8 +245,8 @@
       <!--<h2>Навигация по странице компании "Техномарт"</h2> -->
 
       <a href="#">
-          <img src="img/logo.svg" width="232" height="130" alt="Логотип компании Техномарт">
-        </a>
+				<img src="img/logo.svg" width="232" height="130" alt="Логотип компании Техномарт">
+      </a>
 
       <ul>
         <li>
@@ -285,18 +284,19 @@
       </ul>
 
       <section>
-        <!--<h2>Как с нами связаться?</h2>-->
-        <p>© 2010-2017 Компания «Техномарт» Все права защищены</p>
+        <h2 class="visually-hidden">Как с нами связаться?</h2>
+
+        <p>© 2010-2019 Компания «Техномарт» Все права защищены</p>
 
         <ul>
           <li>
-            <a href="#">Вконтакте</a>
+            <a href="#"><span class="visually-hidden">Вконтакте</span></a>
           </li>
           <li>
-           <a href="#">Facebook</a>
+           <a href="#"><span class="visually-hidden">Facebook</span></a>
           </li>
           <li>
-          <a href="#">Instagram</a>
+          <a href="#"><span class="visually-hidden">Instagram</span></a>
           </li>
         </ul>
 
@@ -305,6 +305,29 @@
       </section>
 
     </footer>
+
+    <!-- Pop-up c формой для связи с Техномартом -->
+    <section>
+    	<h2 class="visually-hidden">Форма связи с "Техномартом"</h2>
+    	<form action="https://echo.htmlacademy.ru/" method="post">
+    		<label for="name">Ваше имя:</label>
+    		<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+    		<label for="email">Ваш e-mail:</label>
+    		<input type="email" name="email" id="email" placeholder="email@example.com">
+    		<label for="textfield">Текст письма:</label>
+    		<textarea name="textfield" id="textfield" placeholder="В свободной форме"></textarea>
+    		<label for="submit-order"></label>
+    		<input type="submit" name="submit-order" id="submit-order" value="Оформить заказ">
+    		<a href=""><span class="visually-hidden">Закрыть форму связи</span></a>
+    	</form>
+    </section>
+
+    <!-- Pop-up полной карты -->
+    <form>
+    	<label for="index-full-map" class="visually-hidden">Карта с расположением "Техномарта"</label>
+			<input type="image" name="index-full-map" id="index-full-map" src="img/full-map.png" alt="Большая Конюшенная ул.,19">
+    	<a href=""><span class="visually-hidden">Закрыть карту</span></a>
+    </form>
 
   </body>
 </html>
