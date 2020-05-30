@@ -15,7 +15,7 @@
 	--basic-red: #EE3643;
 	--basic-blue: #293449;
 	--basic-green: #63A63E;
-	--basic-gray-light: #E5E5E5;
+	--basic-gray-light: #C5C5C5;
 	--basic-background: #F1F5F7;
 	--basic-white: #FFFFFF;
 	--basic-black: #000000;
@@ -33,6 +33,7 @@
 	--color-success: #5FBB2D;
 	--color-error: #BA2732;
 	--color-border: #EAEAEA;
+	--color-button: #E5E5E5;
 }
 
 /* Global */
@@ -41,7 +42,7 @@ body{
 	min-width: 960px;
 	margin: 0;
 	padding: 0;
-	font-family: "Cuprum", sans-serif;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	background-color: var(--basic-white);
@@ -80,13 +81,27 @@ img{
 	color: var(--basic-white);
 }
 
+.main-search input:focus{
+	background-color: var(--basic-white);
+	color: var(--basic-black);
+}
+
 .main-complete-order{
+	background-color: var(--basic-green);
+}
+
+.main-complete-order:hover{
+	background-color: var(--color-success);
+}
+
+.main-complete-order:active{
 	background-color: var(--basic-green);
 }
 
 /* Main header contacts */
 
 .main-heading{
+	font-size: 16px;
 	color: var(--basic-red);
 	font-style: italic;
 	line-height: 23px;
@@ -111,6 +126,14 @@ img{
 	color: var(--basic-black);
 }
 
+.user-navigation a:hover{
+	color: var(--basic-red);
+}
+
+.user-navigation a:active{
+	color: var(--basic-gray-light);
+}
+
 /* Account navigation */
 
 .account-navigation p{
@@ -122,6 +145,15 @@ img{
 	font-size: 16px;
 	line-height: 18px;
 	color: var(--special-blue-dark);
+}
+
+.account-navigation a:hover{
+	color: var(--basic-red);
+}
+
+.account-navigation p:active,
+.account-navigation a:active{
+	color: var(--basic-gray-light);
 }
 
 /* Main navigation */
@@ -139,7 +171,18 @@ img{
 	color: var(--basic-white);
 }
 
-.page-title{
+.main-navigation li:hover,
+.main-navigation li:active{
+	background-color: var(--basic-blue);
+}
+
+.main-navigation a:active{
+	opacity: 0.5;
+}
+
+/* Header 1 */
+
+h1{
 	font-size: 30px;
 	line-height: 30px;
 	color: var(--special-blue-dark);
@@ -156,6 +199,10 @@ img{
 	text-transform: uppercase;
 }
 
+.button:active{
+	background-color: var(--color-error);
+}
+
 /* Breadcrumbs */
 
 .breadcrumps{
@@ -163,6 +210,7 @@ img{
 }
 
 .breadcrumps a{
+	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -204,6 +252,9 @@ img{
 
 /* Filters */
 
+.filters{
+	font-family: "PT Sans", "Tahoma", sans-serif;
+}
 
 .filters h2{
 	font-size: 13px;
@@ -236,9 +287,47 @@ img{
 	text-transform: uppercase;
 }
 
+/* Catalog sort */
+
+.catalog-sort{
+	font-family: "PT Sans", "Tahoma", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	background-color: var(--special-gray-light);
+	text-transform: uppercase;
+}
+
+.catalog-sort-type{
+	color: var(--basic-black);
+	opacity: 0.3;
+	border-bottom: 1px dotted var(--basic-red);
+}
+
+.catalog-sort-value{
+	color: var(--basic-black);
+	opacity: 0.3;
+}
+
+.catalog-sort-type:hover{
+	color: var(--basic-black);
+	opacity: 1;
+	border-bottom: 1px solid var(--basic-red);
+}
+
+.catalog-sort-value:hover{
+	color: var(--basic-black);
+	opacity: 1;
+}
+
+.catalog-sort-value:active,
+.catalog-sort-type:active{
+	color: var(--basic-red);
+}
+
 /* Catalog */
 
 .catalog-list{
+	font-family: "PT Sans", "Tahoma", sans-serif;
 	list-style: none;
 }
 
@@ -265,11 +354,12 @@ img{
 /* Pagination */
 
 .pagination-list{
+	font-family: "PT Sans", "Tahoma", sans-serif;
 	list-style: none;
 }
 
 .pagination-item{
-	border: 1px solid var(--basic-gray-light);
+	border: 1px solid var(--color-button);
 }
 
 .pagination-item a{
@@ -277,6 +367,18 @@ img{
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black);
+}
+
+.pagination-list li:hover{
+	border: 1px solid var(--basic-gray-light);
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+.pagination-list li:active{
+	border: 1px solid var(--basic-red);
+	box-sizing: border-box;
+	border-radius: 2px;
 }
 
 /* Features list */
@@ -287,7 +389,7 @@ img{
 	color: var(--basic-white);
 }
 
-.feature p{
+.feature a{
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -367,6 +469,10 @@ img{
 	color: var(--basic-white);
 }
 
+.service-list li:hover{
+	background-color: var(--basic-blue);
+}
+
 /* Service list items */
 
 .service-list-items{
@@ -427,6 +533,18 @@ img{
 
 .footer-contacts-links{
 	color: var(--special-yellow-light);
+}
+
+.footer-navigation a:hover,
+.footer-links a:hover,
+.footer-contacts-links:hover{
+	text-decoration: underline;
+}
+
+.footer-navigation a:active,
+.footer-links a:active{
+	opacity: 0.5;
+	text-decoration: none;
 }
 
 /* Features slider */

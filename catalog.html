@@ -73,9 +73,7 @@
   </header>
 
   <main>
-    <div class="page-title">
-      <h1>Перфораторы</h1>
-    </div>
+    <h1>Перфораторы</h1>
 
     <ul class="breadcrumps">
       <li>
@@ -103,10 +101,10 @@
         <!-- Блок с выбором цены -->
         <fieldset>
           <legend>Цена:</legend>
-          <span class="filter-range">
+          <p class="filter-range">
             <label for="item-price" class="visually-hidden">Фильтр выбора цены</label>
             <input type="range" name="item-price" id="item-price" min="0" max="30000" step="1000">
-          </span>
+          </p>
           <p class="filter-range">0</p>
           <p> - </p>
           <p class="filter-range">30000</p>
@@ -142,7 +140,7 @@
           <legend>Питание:</legend>
           <ul>
             <li class="filter-radio">
-              <input type="radio" name="type-power">
+              <input type="radio" name="type-power" checked>
               <labeL>Аккумуляторные</labeL>
             </li>
             <li class="filter-radio">
@@ -156,15 +154,15 @@
       </form>
     </section>
 
-    <div>
+    <div class="catalog-sort">
       <p>Сортировка:</p>
-      <a href="">По цене</a>
-      <a href="">По типу</a>
-      <a href="">По функционалу</a>
-      <a href="">
+      <a href="" class="catalog-sort-type">По цене</a>
+      <a href="" class="catalog-sort-type">По типу</a>
+      <a href="" class="catalog-sort-type">По функционалу</a>
+      <a href="" class="catalog-sort-value">
         <img src="img/icon-up-dir.svg" alt="Отсортировать от меньшего к большему">
       </a>
-      <a href="">
+      <a href="" class="catalog-sort-value">
         <img src="img/icon-down-dir.svg" alt="Отсортировать от большего к меньшему">
       </a>
     </div>
@@ -333,7 +331,7 @@
       </ul>
 
       <p>Обратная связь: <span class="footer-contacts-links">mail@htmlacademy.ru</span></p>
-      <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="footer-contacts-links">htmlacademy.ru</span></a></p>
+      <p class="footer-links">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </section>
   </footer>
     
