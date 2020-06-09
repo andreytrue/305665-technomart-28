@@ -35,6 +35,7 @@
 	--color-border: #EAEAEA;
 	--color-button: #E5E5E5;
 	--color-scale: #D7DCDE;
+	--color-checkbox: #C5C5C5;
 	--color-button-shadow: #ABABAB;
 	--color-block: rgba(0,0,0,0.3);
 }
@@ -357,7 +358,7 @@ h1{
 	line-height: 18px;
 	text-transform: uppercase;
 	color: var(--basic-black);
-	padding: 10;
+	padding: 10px;
 	margin: 0;
 	margin-right: 40px;
 }
@@ -432,7 +433,7 @@ h1{
 	width: 228px;
 	height: 38px;
 	text-align: center;
-	padding: 9px auto 11px;
+	padding: 9px 11px;
 	box-sizing: border-box;
 }
 
@@ -575,11 +576,49 @@ h1{
 	margin-left: 35px;
 }
 
-.checkbox-item{
+.filter-option label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before{
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: -4px;
+  width: 23px;
+  height: 23px;
+  /*border: 2px solid #000000;*/
+  background-image: url("img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after{
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: -1px;
+  width: 21px;
+  height: 21px;
+  /*background-color: green;*/
+  /*background-color: red;*/
+  background-image: url("img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filters-checkbox > .checkbox-item:first-child{
+	margin-top: 18px;
+}
+
+.checkbox-item, .radio-item{
 	font-size: 15px;
 	line-height: 19px;
+	margin-bottom: 20px;
 	text-transform: uppercase;
-	border-radius: 5px;
 }
 
 /* Filter-button */
@@ -602,6 +641,7 @@ h1{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
