@@ -4,18 +4,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page-body">
 
 <header class="main-header">
-  <div class="container">
     <div class="user-interface-wrapper">
     	<div class="user-interface">
         <a href="#" class="main-header-logo">
-          <img src="img/logo.svg" width="220" height="47" alt="Логотип компании Техномарт">
+          <img src="img/logo.svg" width="220" height="42" alt="Логотип компании Техномарт">
         </a>
         <form class="main-search">
         	<label for="search" class="visually-hidden">Поиск по сайту</label>
@@ -35,7 +34,7 @@
       
       <div class="main-header-contacts">
         <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
-        <!-- <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> -->
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
 
       <div class="user-navigation">
@@ -69,10 +68,10 @@
         </li>
       </ul>
     </nav>
-  </div>
+
 </header>
 
-<main class="container">
+<main>
 
   <h1 class="visually-hidden">Компания Техномарт</h1>
 
@@ -130,7 +129,7 @@
 
   <section class="catalog">
     <!--<h2>Популярные товары из магазина</h2>-->
-    <ul class="catalog-list">
+    <ul class="index-catalog">
       <li class="catalog-item"> <!-- Товар №1 -->
         <h3>Перфоратор BOSCH BFG 9000</h3>
         <img class="catalog-item-image" src="img/bfg9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
@@ -218,52 +217,61 @@
     </li>
   </ul>
 
-  <section class="main-services"> <!--Блок услуг, которые предоставляет Техномарт-->
-    <h2>Сервисы</h2>
-    <p>Хороший интернет-магазин отличается от плохого не только ценами!
-    Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными!</p>
-    
-    <ul class="service-list">
-    	<li>Доставка</li>
-    	<li>Гарантия</li>
-    	<li>Кредит</li>
-    </ul>
-    <ul class="service-list-items">
-    	<li class="service-item">
-    		<h3>Доставка</h3>
-    		<p>Мы с удовольствием доставим ваш товар прямо
-        к вашему подъезду совершенно бесплатно!</p>
-        <p>Ведь мы неплохо заработаем,
-        поднимая его на ваш этаж!</p>
-    		<img src="img/car.png" alt="" width="468" height="261">
-    	</li>
-    	<!-- <li class="service-item">
-    		<h3>Гарантия</h3>
-    		<p>Если купленный у нас товар поломается или заискрит,
-    		а также в случае пожара, спровоцированного его
-    		возгоранием, вы всегда можете быть уверены в нашей
-    		гарантии. Мы обменяем сгоревший товар на новый.</p>
-    		<p>Дом уж восстановите как-нибудь сами.</p>
-    		<img src="img/100-percent.png" alt="" width="389" height="283">
-    	</li>
-    	<li class="service-item">
-    		<h3>Кредит</h3>
-    		<p>Залезть в долговую яму стало проще!</p>
-    		<p>Кредитные консультанты придут вам на помощь.</p>
-    		<a href="" class="button">Отправить заявку</a>
-    		<img src="img/bank-loan.png" alt="" width="465" height="285">
-    	</li> -->
-    </ul>
-  </section>
+  <div class="service-wrapper">
+    <section class="main-services"> <!--Блок услуг, которые предоставляет Техномарт-->
+      
+      <h2>Сервисы</h2>
+      <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+      <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными!</p>
+      
+      <div class="service-list-wrapper">
+        <ul class="service-list">
+        	<li>Доставка</li>
+        	<li>Гарантия</li>
+        	<li>Кредит</li>
+        </ul>
+
+        <ul class="service-list-items">
+        	<li class="service-item">
+        		<h3>Доставка</h3>
+        		<p>Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!</p>
+            <p>Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!</p>
+        		<!-- <img src="img/car.png" alt="" width="468" height="261"> -->
+        	</li>
+        	<!-- <li class="service-item">
+        		<h3>Гарантия</h3>
+        		<p>Если купленный у нас товар поломается или заискрит,
+        		а также в случае пожара, спровоцированного его
+        		возгоранием, вы всегда можете быть уверены в нашей
+        		гарантии. Мы обменяем сгоревший товар на новый.</p>
+        		<p>Дом уж восстановите как-нибудь сами.</p>
+        		<img src="img/100-percent.png" alt="" width="389" height="283">
+        	</li>
+        	<li class="service-item">
+        		<h3>Кредит</h3>
+        		<p>Залезть в долговую яму стало проще!</p>
+        		<p>Кредитные консультанты придут вам на помощь.</p>
+        		<a href="" class="button">Отправить заявку</a>
+        		<img src="img/bank-loan.png" alt="" width="465" height="285">
+        	</li> -->
+        </ul>
+      </div>
+
+    </section>
+  </div>
 
   <div class="index-columns">
 
     <section class="main-desc"> <!--Почему Техномарт лучше других компаний?-->
       <h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
-      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-        Техномарт работает со многими транспортными компаниями:</p>
+      <div>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+        <p>Техномарт работает со многими транспортными компаниями:</p>
+      </div>
       <ul>
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
@@ -284,6 +292,7 @@
 
   </div>
 
+
 </main>
 
 <footer class="page-footer main-footer">
@@ -292,7 +301,7 @@
     
     <div class="footer-wrapper">
       <a href="#" class="footer-logo">
-    		<img src="img/logo.svg" width="232px" height="130px" alt="Логотип компании Техномарт">
+    		<img src="img/logo.svg" width="220px" height="68px" alt="Логотип компании Техномарт">
       </a>
 
       <ul class="footer-navigation">
@@ -318,7 +327,7 @@
 
       <div class="address-wrapper">
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+        <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
       </div>
 
       <ul class="footer-links">
@@ -338,6 +347,9 @@
 
     </div>
 
+  </div>
+
+  <div class="footer-contacts-wrapper">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Как с нами связаться?</h2>
 
@@ -348,20 +360,32 @@
 
       <ul class="footer-social">
         <li class="social-button">
-          <a href="#"><span class="visually-hidden">Вконтакте</span></a>
+          <a href="#">
+            <img src="img/icon-vk.png">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social-button">
-         <a href="#"><span class="visually-hidden">Facebook</span></a>
+         <a href="#">
+          <img src="img/icon-fb.png">
+          <span class="visually-hidden">Facebook</span>
+         </a>
         </li>
         <li class="social-button">
-        <a href="#"><span class="visually-hidden">Instagram</span></a>
+          <a href="#">
+            <img src="img/icon-insta.png">
+            <span class="visually-hidden">Instagram</span>
+          </a>
         </li>
       </ul>
 
-      <p>Обратная связь: <span class="footer-contacts-links">mail@htmlacademy.ru</span></p>
-      <p class="footer-links footer-contacts-links">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <p class="footer-contacts-links">Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
+
+      <p class="footer-contacts-links">Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a></p>
+
     </section>
   </div>
+
 </footer>
 
   <!-- Pop-up c формой для связи с Техномартом -->
