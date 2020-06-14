@@ -117,7 +117,12 @@ img{
 }
 
 .user-interface-bookmarks{
-	margin: 0 38px;
+	margin: 0 40px;
+}
+
+.user-interface-basket{
+	width: 136px;
+	height: 42px;
 }
 
 .user-interface-basket a{
@@ -161,8 +166,6 @@ img{
 
 .basket-not-empty{
 	background-color: var(--basic-red);
-	width: 136px;
-	height: 42px;
 }
 
 /* Main search */
