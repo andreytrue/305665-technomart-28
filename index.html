@@ -14,7 +14,7 @@
     <div class="user-interface-wrapper">
     	<div class="user-interface">
         <a href="#" class="main-header-logo">
-          <img src="img/logo.svg" width="220px" height="42px" alt="Логотип компании Техномарт">
+          <img src="img/logo.svg" width="220" height="42" alt="Логотип компании Техномарт">
         </a>
         <form class="main-search">
         	<label for="search" class="visually-hidden">Поиск по сайту</label>
@@ -79,19 +79,16 @@
     <li class="feature feature-material"> <!--Блок с краской-->
       <h2>Материалы</h2>
       <a class="" href="">На любой вкус</a>
-      <img src="" alt="">
     </li>
 
     <li class="feature feature-device"> <!--Блок с инструментом-->
       <h2>Инструмент</h2>
       <a href="">На все случаи</a>
-      <img src="" alt="">
     </li>
 
     <li class="feature feature-technique"> <!--Блок с трактором-->
       <h2>Техника</h2>
       <a href="">Для стройки</a>
-      <img src="" alt="">
     </li>
 
     <li class="features-slider">
@@ -116,13 +113,11 @@
     <li class="feature feature-sale"> <!--Блок со скидками-->
       <h2>Скидка 50%</h2>
       <a href="">На 350 товаров</a>
-      <img src="" alt="">
     </li>
 
     <li class="feature feature-delivery"> <!--Блок с доставкой-->
       <h2>Доставка</h2>
       <a href="">Бесплатно</a>
-      <img src="" alt="">
     </li>
   </ul>
 
@@ -225,29 +220,27 @@
         </ul>
 
         <ul class="service-list-items">
-        	<li class="service-item service-delivery">
+        	<!-- <li class="service-item service-delivery">
         		<h3>Доставка</h3>
         		<p>Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно!</p>
             <p>Ведь мы неплохо заработаем,<br>
             поднимая его на ваш этаж!</p>
-        	</li>
+        	</li> -->
         	<!-- <li class="service-item service-warranty">
         		<h3>Гарантия</h3>
-        		<p>Если купленный у нас товар поломается или заискрит,
-        		а также в случае пожара, спровоцированного его
-        		возгоранием, вы всегда можете быть уверены в нашей
+        		<p>Если купленный у нас товар поломается или заискрит,<br>
+        		а также в случае пожара, спровоцированного его<br>
+        		возгоранием, вы всегда можете быть уверены в нашей<br>
         		гарантии. Мы обменяем сгоревший товар на новый.</p>
         		<p>Дом уж восстановите как-нибудь сами.</p>
-        		<img src="img/100-percent.png" alt="" width="389" height="283">
-        	</li>
+        	</li> -->
         	<li class="service-item service-credit">
         		<h3>Кредит</h3>
         		<p>Залезть в долговую яму стало проще!</p>
         		<p>Кредитные консультанты придут вам на помощь.</p>
         		<a href="" class="button">Отправить заявку</a>
-        		<img src="img/bank-loan.png" alt="" width="465" height="285">
-        	</li> -->
+        	</li>
         </ul>
       </div>
 
@@ -277,9 +270,9 @@
       <p>Вы можете забрать товар сами,
         заехав в наш офис:</p>
       <a href="http://maps.google.com">
-        <img src="img/map.png" alt="Карта с отметкой местоположения компании Техномарт" width="300px" height="158px">
+        <img src="img/map.png" alt="Карта с отметкой местоположения компании Техномарт" width="300" height="158">
       </a>
-      <a class="button">Заблудились? Напишите нам!</a>
+      <button class="button">Заблудились? Напишите нам!</button>
     </section>
 
   </div>
@@ -293,7 +286,7 @@
     
     <div class="footer-wrapper">
       <a href="#" class="footer-logo">
-    		<img src="img/logo.svg" width="220px" height="68px" alt="Логотип компании Техномарт">
+    		<img src="img/logo.svg" width="220" height="68" alt="Логотип компании Техномарт">
       </a>
 
       <ul class="footer-navigation">
@@ -353,19 +346,19 @@
       <ul class="footer-social">
         <li class="social-button">
           <a href="#">
-            <img src="img/icon-vk.png" alt="">
+            <img src="img/icon-vk.png" width="25" height="14" alt="">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-button">
          <a href="#">
-          <img src="img/icon-fb.png" alt="">
+          <img src="img/icon-fb.png" width="12" height="22" alt="">
           <span class="visually-hidden">Facebook</span>
          </a>
         </li>
         <li class="social-button">
           <a href="#">
-            <img src="img/icon-insta.png" alt=">
+            <img src="img/icon-insta.png" width="21" height="21" alt="">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
@@ -381,30 +374,42 @@
 </footer>
 
   <!-- Pop-up c формой для связи с Техномартом -->
-  <!-- <section class="popup-contact">
+  <section class="popup popup-contact">
   	<h2 class="visually-hidden">Форма связи с "Техномартом"</h2>
   	<form action="https://echo.htmlacademy.ru/" method="post">
-  		<label for="name">Ваше имя:</label>
-  		<input type="text" name="name" id="name" placeholder="Имя Фамилия">
-  		<label for="email">Ваш e-mail:</label>
-  		<input type="email" name="email" id="email" placeholder="email@example.com">
-  		<label for="textfield">Текст письма:</label>
-  		<textarea name="textfield" id="textfield" placeholder="В свободной форме"></textarea>
+
+      <div class="popup-contact-wrapper">
+        <p>
+      		<label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+      		<input type="email" name="email" id="email" placeholder="email@example.com" required>
+        </p>
+        <p>
+      		<label for="textfield">Текст письма:</label>
+      		<textarea name="textfield" id="textfield" placeholder="В свободной форме" required></textarea>
+        </p>
+      </div>
+
       <div class="submit-order-wrapper">
     		<label for="submit-order"></label>
-    		<input type="submit" class="button" name="submit-order" id="submit-order" value="Оформить заказ">
+    		<input type="submit" class="button submit-button" name="submit-order" id="submit-order" value="Отправить">
       </div>
-  		<a href=""><span class="visually-hidden">Закрыть форму связи</span></a>
   	</form>
-  </section> -->
+    <a href="">
+      <img src="img/icon-close-window.svg" alt="Закрыть окно связи">
+    </a>
+  </section>
 
   <!-- Pop-up полной карты -->
-  <!-- <div class="popup-map">
+  <div class="popup popup-map">
   	<img src="img/full-map.png" alt="Большая карта с расположением магазин Техномарт">
   	<a href="">
-  		<img src="icon-close-window.svg" alt="Закрыть карту">
+  		<img src="img/icon-close-window.svg" alt="Закрыть карту">
   	</a>
-  </div> -->
+  </div>
 
 </body>
 </html>
