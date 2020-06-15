@@ -37,9 +37,12 @@
 	--color-scale: #D7DCDE;
 	--color-checkbox: #C5C5C5;
 	--color-button-shadow: #ABABAB;
+	--color-button-hover: #CA2C37;
 	--color-block: rgba(0,0,0,0.3);
 	--color-social-icon: #212A3A;
 	--color-background-popup: #F1F1F1;
+	--color-features-hover: rgba(197,197,197,0.3);
+	--color-features-click: rgba(169,169,169,0.3);
 }
 
 /* Global */
@@ -100,7 +103,7 @@ img{
 
 .user-interface{
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	flex-wrap: wrap;
 	align-items: center;
 
@@ -112,6 +115,66 @@ img{
 	background-color: var(--basic-blue);
 }
 
+/* Main search */
+
+.main-search{
+	position: relative;
+	align-self: center;
+	width: 271px;
+	height: 42px;
+	margin: 0;
+}
+
+.main-search input{
+	background-color: var(--basic-blue);
+	color: var(--basic-white);
+	font-size: 18px;
+	line-height: 24px;
+	padding: 9px 42px;
+	/*padding-left: 42px;*/
+	border: 0;
+
+	background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 12px;
+}
+
+.main-search input::placeholder{
+	color: white;
+}
+
+.main-search input:focus{
+	background-color: var(--basic-white);
+	color: var(--basic-black);
+	border: 0;
+}
+
+/*.main-search::before{
+	content: "";
+  position: absolute;
+  width: 47px;
+  height: 17px;
+  left: 17px;
+  top: 12px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}*/
+
+/*.main-search:hover::before{
+	content: "";
+  position: absolute;
+  width: 47px;
+  height: 17px;
+  left: -25px;
+  bottom: 5px;
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}*/
+
+/* Boomark and basket lists */
+
 .user-interface a{
 	color: var(--basic-white);
 }
@@ -121,14 +184,11 @@ img{
 }
 
 .user-interface-basket{
-	width: 136px;
-	height: 42px;
-}
-
-.user-interface-basket a{
 	display: block;
-	padding: 9px;
+	align-self: flex-end;
+	padding: 9px 21px;
 	padding-left: 35px;
+	/*width: 136px;*/
 }
 
 .user-interface-bookmarks,
@@ -168,71 +228,15 @@ img{
 	background-color: var(--basic-red);
 }
 
-/* Main search */
-
-.main-search{
-	position: relative;
-	align-self: center;
-	width: 271px;
-	height: 42px;
-	margin: 0;
-}
-
-.main-search input{
-	background-color: var(--basic-blue);
-	color: var(--basic-white);
-	border: 0;
-}
-
-.main-search input[placeholder]{
-	font-size: 18px;
-	line-height: 24px;
-	padding-left: 43px;
-	padding-top: 9px;
-	color: white;
-}
-
-.main-search input:focus{
-	background-color: var(--basic-white);
-	color: var(--basic-black);
-}
-
-.main-search::before{
-	content: "";
-  position: absolute;
-  width: 47px;
-  height: 17px;
-  left: 17px;
-  top: 12px;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-/*.main-search:hover::before{
-	content: "";
-  position: absolute;
-  width: 47px;
-  height: 17px;
-  left: -25px;
-  bottom: 5px;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}*/
-
 /* Main complete order */
 
 .main-complete-order{
+	display: block;
 	background-color: var(--basic-green);
 
 	width: 150px;
-}
-
-.main-complete-order a{
-	display: block;
-	padding: 9px;
-	padding-left: 19px;
+	padding: 9px 0;
+	text-align: center;
 }
 
 .main-complete-order:hover{
@@ -511,6 +515,10 @@ h1{
 	height: 38px;
 	padding-top: 11px;
 	box-sizing: border-box;
+}
+
+.button:hover{
+	background-color: var(--color-button-hover);
 }
 
 .button:active{
@@ -895,7 +903,7 @@ h1{
 	margin-left: 65px;
 	margin-right: 70px;
 }
-
+of
 .catalog-sort-wrapper a:nth-of-type(4){
 	margin-left: 46px;
 	margin-right: 21px;
@@ -1166,6 +1174,14 @@ h1{
   background-position: 191px 32px;
 }
 
+.feature a:hover{
+	background-color: var(--color-features-hover);
+}
+
+.feature a:active{
+	background-color: var(--color-features-click);
+}
+
 /* Features slider*/
 
 .features-slider{
@@ -1310,6 +1326,14 @@ h1{
 	border: 1px solid var(--color-border);
 }
 
+.companies-list li:hover{
+	box-shadow: 0 0 3px;
+}
+
+.companies-list li:active{
+	opacity: 30%;
+}
+
 /* Service wrapper */
 
 .service-wrapper{
@@ -1390,7 +1414,7 @@ h1{
 	color: var(--basic-white);
 }
 
-.service-list [selected]{
+.service-list li:first-of-type{
 	background-color: var(--basic-white);
 	color: var(--special-blue-dark);
 }
@@ -1482,18 +1506,13 @@ h1{
 	background-position: 0 0;
 }
 
-.service-credit::after{
+.service-credit{
 	content: "";
-	position: absolute;
-
-	width: 465px;
-	height: 285px;
-	top: 0;
-	right: -11px;
+	position: relative;
 
 	background-image: url(../img/bank-loan.png);
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 465px 285px;
 }
 
 /* Catalog desc*/
@@ -1854,7 +1873,7 @@ h1{
 	margin-bottom: 13px;
 }
 
-.popup-contact-wrapper p input{
+.popup-contact-wrapper input{
 	width: 220px;
 	height: 38px;
 
@@ -1868,7 +1887,7 @@ h1{
 	margin-bottom: 11px;
 }
 
-.popup-contact-wrapper p textarea{
+.popup-contact-wrapper textarea{
 	width: 460px;
 	height: 100px;
 
