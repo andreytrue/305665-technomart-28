@@ -13,16 +13,15 @@
 <header class="main-header">
     <div class="user-interface-wrapper">
       <div class="user-interface">
-        <a href="index.html" class="main-header-logo">
+        <a href="#" class="main-header-logo">
           <img src="img/logo.svg" width="108" height="18" alt="Логотип компании Техномарт">
         </a>
         <form class="main-search">
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <input type="search" name="search" id="search" placeholder="Поиск:">
           <svg class="main-search-icon" width="17" height="17" viewBox="0 0 17 17">
             <path d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
           </svg>
-
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search" placeholder="Поиск:">
         </form>
         
         <a href="" class="user-interface-bookmarks">
@@ -116,32 +115,36 @@
 
     <li class="features-slider">
       <ul class="slider-wrapper">
-        <!-- <li class="slider-item slider-item-hammer">
+        <li class="slider-item slider-item-hammer">
           <div class="slider-item-wrapper">
           <h2>Перфораторы</h2>
           <p>Настоящие мужские игрушки</p>
           <a href="catalog.html" class="button">Открыть каталог</a>
           </div>
-        </li> -->
+        </li>
 
-        <li class="slider-item slider-item-drill">
+        <!-- <li class="slider-item slider-item-drill">
           <div class="slider-item-wrapper">
             <h2>Дрели</h2>
             <p>Соседям на радость</p>
             <a href="catalog.html" class="button">Открыть каталог</a>
           </div>
-        </li>
+        </li> -->
       </ul>
       <button class="filter-turn-left">
           <svg width="22" height="40" viewBox="0 0 22 40">
             <path d="M19.9244 0.941467L21.9226 2.98927L4.90699 20.4361L21.978 37.9376L19.9789 39.9854L0.910645 20.4361L19.9244 0.941467Z" fill="white"/>
           </svg>
-        </button>
-        <button class="filter-turn-right">
+      </button>
+      <button class="filter-turn-right">
           <svg width="22" height="40" viewBox="0 0 22 40">
             <path d="M19.9244 0.941467L21.9226 2.98927L4.90699 20.4361L21.978 37.9376L19.9789 39.9854L0.910645 20.4361L19.9244 0.941467Z" fill="white"/>
           </svg>
-        </button>
+      </button>
+      <div class="filter-indicator">
+        <button class="filter-indicator-item"></button>
+        <button class="filter-indicator-item filter-indicator-current"></button>
+      </div>
     </li>
 
     <li class="feature feature-sale"> <!--Блок со скидками-->

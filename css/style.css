@@ -167,9 +167,13 @@ img{
 	color: var(--basic-black);
 }
 
-/*.main-search input:hover .main-search-icon path{
+.main-search input:hover + .main-search-icon{
+	opacity: 1;
+}
+
+.main-search input:hover + .main-search-icon path{
 	fill: var(--basic-red);
-}*/
+}
 
 /* Bookmark and basket lists */
 
@@ -858,6 +862,7 @@ h1{
   top: -4px;
   width: 23px;
   height: 23px;
+  opacity: 0.7;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -879,6 +884,14 @@ h1{
 	margin-top: 18px;
 }
 
+.filter-input-checkbox:hover + label::before{
+  opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label::before{
+  opacity: 0.3;
+}
+
 .checkbox-item, .radio-item{
 	font-size: 15px;
 	line-height: 19px;
@@ -893,6 +906,7 @@ h1{
   top: -4px;
   width: 25px;
   height: 25px;
+  opacity: 0.7;
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -910,9 +924,20 @@ h1{
   background-position: 0 0;
 }
 
+.filter-input-radio:hover + label::before{
+	opacity: 1;
+}
+
+.filter-input-radio:disabled + label::before{
+	opacity: 0.3;
+}
+
 /* Filter-button */
 
 .filter-button{
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
 	text-align: center;
 	box-sizing: border-box;
 	color: var(--basic-black);
@@ -921,6 +946,7 @@ h1{
 	padding: 10px 0;
 	width: 100%;
 	border: 1px solid var(--color-button);
+	cursor: pointer;
 }
 
 /* Catalog sort */
@@ -1484,6 +1510,57 @@ h1{
 	background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
+}
+
+/* Slider Indicators */
+
+.filter-indicator{
+	display: flex;
+	position: absolute;
+	align-self: center;
+
+	left: 295px;
+	bottom: 36px;
+}
+
+.filter-indicator-item{
+	display: block;
+
+	width: 10px;
+	height: 10px;
+
+	padding: 0;
+	margin: 0;
+	border: 0;
+
+	background-color: transparent;
+
+	background-image: url(../img/slider-dot.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.filter-indicator-item:not(:last-of-type){
+	margin-right: 10px;
+}
+
+.filter-indicator-current{
+	position: relative;
+}
+
+.filter-indicator-current::before{
+	content: "";
+	position: absolute;
+
+	width: 6px;
+	height: 6px;
+
+	top: 2px;
+	right: 2px;
+
+	background-image: url(../img/slider-dot-current.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 /* Popular */
