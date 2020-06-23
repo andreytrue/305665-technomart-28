@@ -7,10 +7,6 @@ var contactName = contactPopup.querySelector(".popup-contact-name");
 var contactEmail = contactPopup.querySelector(".popup-contact-email");
 var contactText = contactPopup.querySelector(".popup-contact-text");
 
-var isStorageSupport = true;
-var storageName = "";
-var storageEmail = "";
-
 // Map popup inputs
 var mapLink = document.querySelector(".map-button");
 var mapPopup = document.querySelector(".popup-map");
@@ -22,6 +18,10 @@ var basketPopup = document.querySelector(".popup-basket");
 var basketClose = document.querySelector(".popup-basket-close");
 
 // Contact popup
+
+var isStorageSupport = true;
+var storageName = "";
+var storageEmail = "";
 
 try {
   storageName = localStorage.getItem("name");
