@@ -332,14 +332,12 @@ img{
 .main-heading{
 	font-style: italic;
 	font-size: 16px;
-	/*line-height: 23px;*/
 	font-weight: normal;
 	color: var(--basic-red);
 
 	width: 197px;
 	margin: 0px;
 	margin-left: 30px;
-	/*padding-bottom: 2px;*/
 }
 
 .main-heading p{
@@ -542,6 +540,7 @@ img{
 
 .main-navigation{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 
@@ -604,8 +603,8 @@ h1{
 
 	text-align: center;
 	width: 192px;
-	height: 38px;
 	padding-top: 11px;
+	padding-bottom: 9px;
 	box-sizing: border-box;
   cursor: pointer;
 }
@@ -787,7 +786,6 @@ h1{
 .main-desc a{
 	display: block;
 	width: 220px;
-	height: 38px;
 }
 
 /* Main Contacts */
@@ -802,23 +800,18 @@ h1{
 
 .main-contacts p{
 	width: 180px;
-	margin-bottom: 32px;
+	margin-bottom: 33px;
 }
 
 .main-contacts a{
 	display: block;
 	margin-top: 25px;
 	width: 300px;
-}
 
-.main-contacts button{
 	font-size: 14px;
 	line-height: 18px;
-	margin-top: 18px;
+	margin-top: 20px;
 	width: 300px;
-	height: 38px;
-	padding: 0;
-	padding-top: 1px;
 }
 
 /* Filters */
@@ -1342,7 +1335,8 @@ h1{
 	position: absolute;
 	padding-top: 8px;
 
-	font-size: 12px;
+	font-family: "Cuprum", "Tahoma", sans-serif;
+	font-size: 14px;
 	line-height: 18px;
 	color: var(--basic-white);
 
@@ -1368,6 +1362,7 @@ h1{
 
 .button-item{
 	display: block;
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: var(--basic-white);
@@ -1621,6 +1616,7 @@ h1{
 	padding-top: 9px;
 	padding-right: 9px;
 
+	font-family: "Cuprum", "Tahoma", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: var(--basic-white);
@@ -1794,7 +1790,7 @@ h1{
 
 .main-popular a{
 	min-width: auto;
-	margin: 25px 0;
+	margin: auto 0;
 	margin-right: 14px;
 }
 
