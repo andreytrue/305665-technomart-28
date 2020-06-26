@@ -51,6 +51,7 @@
 	--color-header-link-click: #161D29;
 	--color-semi-white: rgba(255, 255, 255, 0.5);
 	--color-filter-line: rgba(0, 0, 0, 0.0001);
+	--color-slider-background: #62443A;
 }
 
 /* Global */
@@ -1467,6 +1468,7 @@ h1{
 
 	border: 1px solid var(--color-button);
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .pagination-list > li:last-child{
@@ -1511,7 +1513,6 @@ h1{
 	grid-template-rows: auto auto auto;
 
 	margin: 59px auto;
-	/*margin: 59px;*/
 	width: 940px;
 	list-style: none;
 	padding: 0;
@@ -1675,7 +1676,7 @@ h1{
 .slider-item{
 	padding: 0px;
 	margin: 0px;
-	height: 266px;
+	min-height: 266px;
 	box-sizing: border-box;
 }
 
@@ -1686,8 +1687,9 @@ h1{
 
 .slider-item h2{
 	color: white;
+	max-width: 100%;
 	padding: 0;
-	margin: 0px;
+	margin: 0;
 }
 
 .slider-item p{
@@ -1700,17 +1702,18 @@ h1{
 
 .slider-item a{
 	display: block;
+	margin-bottom: 27px;
 }
 
 .slider-item-hammer{
-	background-image: url("../img/perforatori.jpg");
+	background: var(--color-slider-background) url("../img/perforatori.jpg");
 	background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
 }
 
 .slider-item-drill{
-	background-image: url("../img/dreli.jpg");
+	background: var(--color-slider-background) url("../img/dreli.jpg");
 	background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
@@ -1770,7 +1773,6 @@ h1{
 	justify-content: space-between;
 	margin: 20px auto;
 	margin-bottom: 19px;
-	height: 90px;
 
 	width: 940px;
 

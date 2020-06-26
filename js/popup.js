@@ -13,7 +13,7 @@ var mapPopup = document.querySelector(".popup-map");
 var mapClose = document.querySelector(".map-popup-close");
 
 // Basket popup inputs
-var basketLink = document.querySelector(".button-basket");
+var basketLink = document.querySelector(".button-add-to-basket");
 var basketPopup = document.querySelector(".popup-basket");
 var basketClose = document.querySelector(".popup-basket-close");
 
