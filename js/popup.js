@@ -13,7 +13,7 @@ var mapPopup = document.querySelector(".popup-map");
 var mapClose = document.querySelector(".map-popup-close");
 
 // Basket popup inputs
-var basketLink = document.querySelector(".button-add-to-basket");
+var basketLinks = document.querySelectorAll(".button-add-to-basket");
 var basketPopup = document.querySelector(".popup-basket");
 var basketClose = document.querySelector(".popup-basket-close");
 
@@ -97,10 +97,12 @@ window.addEventListener("keydown", function (evt) {
 
 // Basket popup
 
-basketLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketPopup.classList.add("popup-show");
-});
+for (let basketLink of basketLinks){
+	basketLink.addEventListener("click", function (evt) {
+	  evt.preventDefault();
+	  basketPopup.classList.add("popup-show");
+	});
+}
 
 basketClose.addEventListener("click", function (evt) {
   evt.preventDefault();
