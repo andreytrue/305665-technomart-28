@@ -1961,14 +1961,14 @@ h1{
 }
 
 .slider-item-hammer{
-	background: var(--color-slider-background) url("../img/perforatori.jpg");
+	background: var(--color-slider-background) url("../img/hammers.jpg");
 	background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
 }
 
 .slider-item-drill{
-	background: var(--color-slider-background) url("../img/dreli.jpg");
+	background: var(--color-slider-background) url("../img/drills.jpg");
 	background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
