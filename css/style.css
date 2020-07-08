@@ -117,7 +117,6 @@ img{
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	/*margin-bottom: 60px;*/
 }
 
 .user-interface-wrapper{
@@ -577,7 +576,8 @@ img{
 	right: 17px;
 }
 
-.account-name:hover svg{
+.account-name svg:first-of-type:hover,
+.account-name svg:last-of-type:hover{
 	opacity: 1;
 }
 
@@ -770,6 +770,7 @@ h1{
 	height: 355px;
 
 	margin: 70px auto;
+	margin-top: 72px;
 	width: 940px;
 	padding: 0px;
 }
@@ -1109,7 +1110,8 @@ h1{
 	margin-top: 18px;
 }
 
-.filter-input-checkbox:hover + label::before{
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before{
   opacity: 1;
 }
 
@@ -1170,7 +1172,8 @@ h1{
   background-position: 0 0;
 }
 
-.filter-input-radio:hover + label::before{
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before{
 	opacity: 1;
 }
 
@@ -1585,7 +1588,8 @@ h1{
 	background-position: 0 0;
 }
 
-.button-add-to-basket:hover{
+.button-add-to-basket:hover,
+.button-add-to-basket:focus{
 	background-color: var(--color-item-button-hover);
 }
 
@@ -1593,7 +1597,8 @@ h1{
 	background-color: var(--color-item-button-click);
 }
 
-.button-add-bookmark:hover{
+.button-add-bookmark:hover,
+.button-add-bookmark:focus{
 	border: 3px solid var(--special-blue-dark);
 }
 
@@ -1603,18 +1608,21 @@ h1{
 
 /* Catalog item action */
 
-.catalog-item:hover{
+.catalog-item:hover,
+.catalog-item:focus{
 	-webkit-box-shadow: 0px 4px 20px var(--color-companie-shadow);
 	        box-shadow: 0px 4px 20px var(--color-companie-shadow);
 }
 
-.catalog-item:hover .catalog-item-buttons{
+.catalog-item:hover .catalog-item-buttons,
+.catalog-item:focus .catalog-item-buttons{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 
-.catalog-item:hover img{
+.catalog-item:hover img,
+.catalog-item:focus img{
 	display: none;
 }
 
@@ -1692,7 +1700,7 @@ h1{
 	-ms-grid-rows: auto 20px auto 20px auto;
 	grid-template-rows: auto auto auto;
 
-	margin: 59px auto;
+	margin: 59px auto 58px;
 	width: 940px;
 	list-style: none;
 	padding: 0;
@@ -2034,7 +2042,6 @@ h1{
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	margin: 20px auto;
-	margin-bottom: 19px;
 
 	width: 940px;
 
@@ -2203,7 +2210,7 @@ h1{
 	        flex-direction: column;
 	margin: 0 auto;
 	width: 940px;
-	height: 522px;
+	/*height: 522px;*/
 }
 
 .main-services h2{
@@ -2211,8 +2218,8 @@ h1{
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-	margin-top: 64px;
-	margin-bottom: 24px;
+	margin-top: 65px;
+	margin-bottom: 25px;
 }
 
 .main-services p{
@@ -2318,7 +2325,11 @@ h1{
 	position: relative;
 
 	padding-top: 70px;
-	padding-bottom: 128px;
+	padding-bottom: 125px;
+}
+
+.service-item div{
+	width: 318px;
 }
 
 .service-item h3{
@@ -2329,14 +2340,14 @@ h1{
 	text-transform: uppercase;
 
 	margin: 0;
-	padding-bottom: 29px;
+	padding-bottom: 28px;
 }
 
 .service-item p{
 	font-family: "PT Sans", "Tahoma", sans-serif;
 	font-size: 13px;
 	font-weight: normal;
-	line-height: 24px;
+	line-height: 25px;
 
 	margin: 0px;
 	padding: 0px;
