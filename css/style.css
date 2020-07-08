@@ -1615,14 +1615,16 @@ h1{
 }
 
 .catalog-item:hover .catalog-item-buttons,
-.catalog-item:focus .catalog-item-buttons{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+.catalog-item:focus .catalog-item-buttons,
+.catalog-item:focus-within .catalog-item-buttons{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .catalog-item:hover img,
-.catalog-item:focus img{
+.catalog-item:focus img,
+.catalog-item:focus-within img{
 	display: none;
 }
 
@@ -1708,7 +1710,7 @@ h1{
 
 .features-list > *:nth-child(1){
   -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  -ms-grid-column: 1; 
 }
 
 .features-list > *:nth-child(2){
